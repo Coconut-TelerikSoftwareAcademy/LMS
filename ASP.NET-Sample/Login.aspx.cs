@@ -8,7 +8,13 @@ namespace ASP.NETSample
 	{
 		public void login (object sender, EventArgs args)
 		{
-			
+			bool valid = true;
+			//TODO: check valid values
+			if (valid)
+				Server.Transfer ("/", true);
+			else {
+				Server.Transfer ("/Failed_login.aspx", false);
+			}
 		}
 	}
 }

@@ -9,7 +9,7 @@ namespace ASP.NETSample
 	{
 		public void recovery (object sender, EventArgs args)
 		{
-			submit_recovery.Text = "UUU";
+			Server.Transfer("/Login.aspx", false);
 			return;
 		}
 	}

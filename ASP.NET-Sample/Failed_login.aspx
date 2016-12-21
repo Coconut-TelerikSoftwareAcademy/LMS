@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" Inherits="ASP.NETSample.Recovery" %>
+﻿<%@ Page Language="C#" Inherits="ASP.NETSample.Failed_login" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,19 +40,21 @@
 	    </div>
 	    <div class="container">
 	        <!-- Example row of columns-->
+	        <div class="alert alert-danger">
+			  <strong>Login Failed!</strong> Invalid username or password.
+			</div>
 	        <div class="row">
 	            <div class="col-md-4">
-	            	<h1>Password Recovery:</h1><br>
+	            	<h1>Login:</h1><br>
 	                <form id="login_form" runat="server">
 	                    <div class="form-group">
 	                        <label for="email">Email address</label>
-	                        <input type="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" class="form-control"><small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-	                    </div>
+	                        <input type="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" class="form-control"><small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small></div>
 	                    <div class="form-group">
-	                        <label for="password">Last password that you remember</label>
+	                        <label for="password">Password</label>
 	                        <input type="password" name="password" placeholder="Password" class="form-control">
 	                    </div>
-						<asp:Button id="submit_recovery" runat="server" class="btn btn-primary" Text="Submit »" OnClick="recovery" />
+						<asp:Button id="submit_login" runat="server" class="btn btn-primary" Text="Submit »" OnClick="login" />
 	                </form>
 	            </div>
 	        </div>

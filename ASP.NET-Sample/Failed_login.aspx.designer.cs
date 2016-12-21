@@ -11,7 +11,7 @@
 namespace ASP.NETSample {
 	
 	
-	public partial class Login {
+	public partial class Failed_login {
 		
 		protected System.Web.UI.HtmlControls.HtmlForm login_form;
 		

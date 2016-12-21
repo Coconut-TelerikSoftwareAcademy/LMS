@@ -51,8 +51,6 @@
 	                        <label for="password">Password</label>
 	                        <input type="password" name="password" placeholder="Password" class="form-control">
 	                    </div>
-	                    <asp:ChangePassword id="change" runat="server" class="btn btn-primary" Text="Submit »" OnClick="login" />
-						<asp:PasswordRecovery id="pass_recovery" runat="server" />
 						<asp:Button id="submit_login" runat="server" class="btn btn-primary" Text="Submit »" OnClick="login" />
 	                </form>
 	            </div>

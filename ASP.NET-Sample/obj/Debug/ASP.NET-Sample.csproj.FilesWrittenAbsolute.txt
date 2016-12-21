@@ -8,3 +8,13 @@
 /home/alex/Desktop/ASP.NET-Sample/ASP.NET-Sample/obj/Debug/ASP.NET-Sample.dll
 /home/alex/Desktop/ASP.NET-Sample/ASP.NET-Sample/obj/Debug/ASP.NET-Sample.dll.mdb
 /home/alex/Desktop/ASP.NET-Sample/ASP.NET-Sample/bin/MySql.Data.dll
+/home/alex/GIT/Group/Coconut/LMS/ASP.NET-Sample/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/alex/GIT/Group/Coconut/LMS/ASP.NET-Sample/bin/ASP.NET-Sample.dll.mdb
+/home/alex/GIT/Group/Coconut/LMS/ASP.NET-Sample/bin/ASP.NET-Sample.dll
+/home/alex/GIT/Group/Coconut/LMS/ASP.NET-Sample/obj/Debug/ASP.NET-Sample.dll
+/home/alex/GIT/Group/Coconut/LMS/ASP.NET-Sample/obj/Debug/ASP.NET-Sample.dll.mdb
+/home/alex/GIT/Group/Coconut/LMS/ASP.NET-Sample/bin/Newtonsoft.Json.dll
+/home/alex/GIT/Group/Coconut/LMS/ASP.NET-Sample/bin/System.Net.Http.Formatting.dll
+/home/alex/GIT/Group/Coconut/LMS/ASP.NET-Sample/bin/System.Web.Http.dll
+/home/alex/GIT/Group/Coconut/LMS/ASP.NET-Sample/bin/System.Web.Http.WebHost.dll
+/home/alex/GIT/Group/Coconut/LMS/ASP.NET-Sample/bin/MySql.Data.dll
