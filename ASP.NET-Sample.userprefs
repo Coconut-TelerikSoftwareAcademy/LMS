@@ -1,1 +1,33 @@
-﻿<Properties StartupItem="ASP.NET-Sample/ASP.NET-Sample.csproj" />
+﻿<Properties StartupItem="ASP.NET-Sample/ASP.NET-Sample.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="firefox" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataBase/CheckUsername.cs">
+    <Files>
+      <File FileName="ASP.NET-Sample/Recovery.aspx.cs" Line="12" Column="42" />
+      <File FileName="ASP.NET-Sample/Login.aspx" Line="53" Column="28" />
+      <File FileName="ASP.NET-Sample/Login.aspx.cs" Line="9" Column="1" />
+      <File FileName="ASP.NET-Sample/Failed_login.aspx" Line="52" Column="71" />
+      <File FileName="ASP.NET-Sample/Failed_login.aspx.cs" Line="9" Column="3" />
+      <File FileName="DataBase/CheckUsername.cs" Line="25" Column="28" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ASP.NET-Sample" expanded="True">
+            <Node name="ASP.NET-Sample" expanded="True">
+              <Node name="Failed_login.aspx" expanded="True" />
+              <Node name="Login.aspx" expanded="True" />
+              <Node name="Recovery.aspx" expanded="True" />
+            </Node>
+            <Node name="DataBase" expanded="True">
+              <Node name="CheckUsername.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
