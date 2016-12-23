@@ -96,6 +96,12 @@
     <Compile Include="Failed_login.aspx.designer.cs">
       <DependentUpon>Failed_login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="StudentSystem\Course.cs" />
+    <Compile Include="StudentSystem\Exam.cs" />
+    <Compile Include="StudentSystem\Task.cs" />
+    <Compile Include="StudentSystem\Track.cs" />
+    <Compile Include="StudentSystem\SudentSystemClient.cs" />
+    <Compile Include="StudentSystem\User.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
@@ -112,5 +118,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="favicon.ico" />
+    <None Include="StudentSystem\StudentSystem.csproj" />
   </ItemGroup>
 </Project>

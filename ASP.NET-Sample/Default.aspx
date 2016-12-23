@@ -1,17 +1,4 @@
-﻿<%@ Page Language="C#" Inherits="ASP.NETSample.Login" %>
-<!--
-<!DOCTYPE html>
-<html>
-	<head runat="server">
-		<title>Coconut LMS</title>
-	</head>
-	<body>
-		<form id="login_form" runat="server">
-			<asp:Button id="login_submit" runat="server" Text="Submit" OnClick="login" />
-		</form>
-	</body>
-</html>
--->
+﻿<%@ Page Language="C#" CodeBehind="./Default.aspx.cs" Inherits="ASP.NETSample.Default" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,11 +40,14 @@
     </div>
     <div class="container">
         <div class="row">
+			<asp:Panel Visible="true" id="courses" runat="server" OnInit="update_courses"></asp:Panel>
+            <!--
             <div class="col-md-4">
                 <h2>C#</h2>
                 <p>These courses can teach you how to programming in C#.</p>
                 <p><a href="./courses/cs.aspx" role="button" class="btn btn-secondary">View details »</a></p>
             </div>
+            -->
         </div>
     </div>
     <hr>

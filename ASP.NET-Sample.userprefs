@@ -1,30 +1,18 @@
 ﻿<Properties StartupItem="ASP.NET-Sample/ASP.NET-Sample.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="firefox" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DataBase/CheckUsername.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ASP.NET-Sample/Login.aspx.cs">
     <Files>
-      <File FileName="ASP.NET-Sample/Recovery.aspx.cs" Line="12" Column="42" />
-      <File FileName="ASP.NET-Sample/Login.aspx" Line="53" Column="28" />
-      <File FileName="ASP.NET-Sample/Login.aspx.cs" Line="9" Column="1" />
-      <File FileName="ASP.NET-Sample/Failed_login.aspx" Line="52" Column="71" />
-      <File FileName="ASP.NET-Sample/Failed_login.aspx.cs" Line="9" Column="3" />
-      <File FileName="DataBase/CheckUsername.cs" Line="25" Column="28" />
+      <File FileName="ASP.NET-Sample/Default.aspx" Line="43" Column="8" />
+      <File FileName="ASP.NET-Sample/Default.aspx.cs" Line="11" Column="53" />
+      <File FileName="ASP.NET-Sample/Login.aspx" Line="52" Column="76" />
+      <File FileName="ASP.NET-Sample/Login.aspx.cs" Line="23" Column="4" />
+      <File FileName="ASP.NET-Sample/StudentSystem/SudentSystemClient.cs" Line="27" Column="74" />
+      <File FileName="ASP.NET-Sample/StudentSystem/Course.cs" Line="33" Column="16" />
+      <File FileName="ASP.NET-Sample/StudentSystem/Exam.cs" Line="28" Column="10" />
+      <File FileName="ASP.NET-Sample/StudentSystem/Track.cs" Line="36" Column="27" />
+      <File FileName="ASP.NET-Sample/StudentSystem/Task.cs" Line="69" Column="40" />
+      <File FileName="ASP.NET-Sample/StudentSystem/User.cs" Line="23" Column="24" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="ASP.NET-Sample" expanded="True">
-            <Node name="ASP.NET-Sample" expanded="True">
-              <Node name="Failed_login.aspx" expanded="True" />
-              <Node name="Login.aspx" expanded="True" />
-              <Node name="Recovery.aspx" expanded="True" />
-            </Node>
-            <Node name="DataBase" expanded="True">
-              <Node name="CheckUsername.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

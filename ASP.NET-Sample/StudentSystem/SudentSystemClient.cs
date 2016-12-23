@@ -1,5 +1,5 @@
 ﻿//
-//  Exam.cs
+//  SudentSystemClient.cs
 //
 //  Author:
 //       Alex Tsvetanov <alex@tsalex.tk>
@@ -18,19 +18,24 @@
 //
 //  You should have received a copy of the GNU General Public License
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
-using System;
 using System.Collections.Generic;
 
 namespace StudentSystem
 {
-	public class Exam
+	class Client
 	{
-		string title { get; private set; }
-		List <ITask> Tasks = new List<ITask> ();
-
-		public Exam ()
+		static public Dictionary <string, User> Users = new Dictionary<string, User> ();
+		static public List <Track> Tracks = new List<Track> ();
+		static Client ()
 		{
+			Tracks.Add (new Track (
+									"C#", 
+									"./courses/cs.aspx",
+									new List<Course> () {
+										new Course ("Intro", "./cs/intro.aspx")
+									}
+			                      )
+			           );
 		}
 	}
 }
-

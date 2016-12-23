@@ -1,5 +1,5 @@
 ﻿//
-//  Course.cs
+//  User.cs
 //
 //  Author:
 //       Alex Tsvetanov <alex@tsalex.tk>
@@ -19,18 +19,26 @@
 //  You should have received a copy of the GNU General Public License
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 using System;
-using System.Collections.Generic;
 
 namespace StudentSystem
 {
-	public class Course
+	public class User : IComparable<User>
 	{
-		string name { get; private set; }
-		List < Lesson > Lessons;
-		List < Presentation > Presentations;
-		List < Exam > Exams = new List<Exam> ();
-		public Course ()
+		public string name { get; private set; }
+		public string email { get; private set; }
+		public string password { get; private set; }
+		public int points { get; private set; }
+		public User (string Name, string Email, string Password)
 		{
+			name = Name;
+			email = Email;
+			password = Password;
+			points = 0;
+		}
+
+		public int CompareTo (User obj) 
+		{
+			return email.CompareTo (obj.email);
 		}
 	}
 }

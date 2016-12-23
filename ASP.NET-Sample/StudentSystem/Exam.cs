@@ -1,5 +1,5 @@
 ﻿//
-//  Task.cs
+//  Exam.cs
 //
 //  Author:
 //       Alex Tsvetanov <alex@tsalex.tk>
@@ -23,53 +23,12 @@ using System.Collections.Generic;
 
 namespace StudentSystem
 {
-	public class ITask
+	public class Exam
 	{
-		public string name { get; private set; }
-		public string description { get; private set; }
-		public string author { get; private set; }
-	}
+		public string title { get; private set; }
+		public List <ITask> Tasks = new List<ITask> ();
 
-	public interface ITest
-	{
-		float Points (string program_output);
-	}
-
-	public class PracticalTask : ITask
-	{
-		List < Test > Tests = new List<Test> ();
-
-		class Test : ITest
-		{
-			string stdin;
-			string stdout;
-			Func<string, string, float> CurrentComparer = null;
-			public float Points (string program_output)
-			{
-				return CurrentComparer (stdout, program_output) * 1.0f;
-			}
-		}
-
-		public PracticalTask ()
-		{
-		}
-	}
-
-	public class TheoryTask : ITask
-	{
-		Test Tests;
-
-		class Test : ITest
-		{
-			string correct_answers;
-
-			public float Points (string program_output)
-			{
-				return (correct_answers == program_output) * 1.0f;
-			}
-		}
-
-		public TheoryTask ()
+		public Exam ()
 		{
 		}
 	}

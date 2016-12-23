@@ -11,6 +11,8 @@
 namespace ASP.NETSample {
 	
 	
-	public partial class Login {
+	public partial class Default {
+		
+		protected System.Web.UI.WebControls.Panel courses;
 	}
 }

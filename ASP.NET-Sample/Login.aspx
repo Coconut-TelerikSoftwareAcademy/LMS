@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" Inherits="ASP.NETSample.Login" %>
+﻿<%@ Page Language="C#" CodeBehind="Login.aspx.cs" Inherits="ASP.NETSample.Login" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -46,10 +46,18 @@
 	                <form id="login_form" runat="server">
 	                    <div class="form-group">
 	                        <label for="email">Email address</label>
-	                        <input type="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" class="form-control"><small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small></div>
+	                        <!--
+	                        <input runat="server" id="emailboza" name="email" aria-describedby="emailHelp" placeholder="Enter email" class="form-control" onfocus="make_email" />
+	                        -->
+	                        <asp:TextBox runat="server" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" class="form-control"/>
+	                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+	                    </div>
 	                    <div class="form-group">
 	                        <label for="password">Password</label>
-	                        <input type="password" name="password" placeholder="Password" class="form-control">
+	                        <!--
+	                        <input runat="server" id="passwordboza" name="password" placeholder="Password" class="form-control" onfocus="make_pass" />
+	                    	-->
+	                    	<asp:TextBox TextMode="Password" runat="server" name="password" id="password" placeholder="Password" class="form-control" />
 	                    </div>
 						<asp:Button id="submit_login" runat="server" class="btn btn-primary" Text="Submit »" OnClick="login" />
 	                </form>

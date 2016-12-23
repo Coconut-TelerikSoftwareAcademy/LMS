@@ -15,6 +15,10 @@ namespace ASP.NETSample {
 		
 		protected System.Web.UI.HtmlControls.HtmlForm login_form;
 		
+		protected System.Web.UI.WebControls.TextBox email;
+		
+		protected System.Web.UI.WebControls.TextBox password;
+		
 		protected System.Web.UI.WebControls.Button submit_login;
 	}
 }

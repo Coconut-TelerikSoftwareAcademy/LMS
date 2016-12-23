@@ -25,11 +25,15 @@ namespace StudentSystem
 {
 	public class Track
 	{
-		string name { get; private set; }
-		List < Course > Courses;
+		public string name { get; private set; }
+		public string link { get; private set; }
+		public List < Course > Courses;
 
-		public Track ()
+		public Track (string Name, string Link, List <Course> Courses = null)
 		{
+			name = Name;
+			link = Link;
+			this.Courses = Courses;
 		}
 	}
 }
