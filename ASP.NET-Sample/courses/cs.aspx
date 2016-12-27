@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" Inherits="ASP.NETSample.Login" %>
+﻿<%@ Page Language="C#" CodeBehind="./cs.aspx.cs" Inherits="ASP.NETSample.cs" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,8 +25,8 @@
     <nav class="navbar navbar-fixed-top navbar-dark bg-inverse"><a href="/" class="navbar-brand">Tech Edu ++</a>
         <ul class="nav navbar-nav">
             <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">User</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><asp:Panel Visible="true" id="username" runat="server" OnInit="get_user"></asp:Panel></a></li>
+            <li class="nav-item"><a href="/Login.aspx" class="nav-link">Login</a></li>
             <li class="nav-item"><a href="/Register.aspx" class="nav-link">Register</a></li>
             <li class="nav-item"><a href="https://chat.techedu.cf" class="nav-link">Chat</a></li>
             <li class="nav-item"><a href="/contactus.html" class="nav-link">Contact</a></li>

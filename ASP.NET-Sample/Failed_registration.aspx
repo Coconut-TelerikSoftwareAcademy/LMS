@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" CodeBehind="./Login.aspx.cs" Inherits="ASP.NETSample.Login" %>
+﻿<%@ Page Language="C#" CodeBehind="Register.aspx.cs" Inherits="ASP.NETSample.Register" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,12 +20,12 @@
 	</head>
 
 	<body>
-	    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse"><a href="/" class="navbar-brand">AT Judge</a>
+	    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse"><a href="/" class="navbar-brand">Tech Edu ++</a>
 	        <ul class="nav navbar-nav">
             <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link">User</a></li>
-            <li class="nav-item active"><a href="#" class="nav-link">Login</a></li>
-            <li class="nav-item"><a href="/Register.aspx" class="nav-link">Register</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+            <li class="nav-item active"><a href="/Register.aspx" class="nav-link">Register</a></li>
             <li class="nav-item"><a href="https://chat.techedu.cf" class="nav-link">Chat</a></li>
             <li class="nav-item"><a href="/contactus.html" class="nav-link">Contact</a></li>
             <li class="nav-item"><a href="/aboutus.html" class="nav-link">About</a></li>
@@ -41,18 +41,30 @@
 	    <div class="container">
 	        <!-- Example row of columns-->
 	        <div class="alert alert-danger">
-			  <strong>Login Failed!</strong> Invalid username or password.
+			  <strong>Registration Failed!</strong> Invalid username or password.
 			</div>
 	        <div class="row">
 	            <div class="col-md-4">
-	            	<h1>Login:</h1><br>
+	            	<h1>Register:</h1><br>
 	                <form id="login_form" runat="server">
 	                    <div class="form-group">
+	                        <label for="email">Name</label>
+	                        <asp:TextBox runat="server" id="name" name="name" placeholder="Enter your name" class="form-control"/>
+	                    </div>
+	                    <div class="form-group">
 	                        <label for="email">Email address</label>
-	                        <input type="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" class="form-control"><small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small></div>
+	                        <!--
+	                        <input runat="server" id="emailboza" name="email" aria-describedby="emailHelp" placeholder="Enter email" class="form-control" onfocus="make_email" />
+	                        -->
+	                        <asp:TextBox runat="server" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" class="form-control"/>
+	                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+	                    </div>
 	                    <div class="form-group">
 	                        <label for="password">Password</label>
-	                        <input type="password" name="password" placeholder="Password" class="form-control">
+	                        <!--
+	                        <input runat="server" id="passwordboza" name="password" placeholder="Password" class="form-control" onfocus="make_pass" />
+	                    	-->
+	                    	<asp:TextBox TextMode="Password" runat="server" name="password" id="password" placeholder="Password" class="form-control" />
 	                    </div>
 						<asp:Button id="submit_login" runat="server" class="btn btn-primary" Text="Submit »" OnClick="login" />
 	                </form>

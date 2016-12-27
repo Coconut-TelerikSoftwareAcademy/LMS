@@ -1,17 +1,15 @@
 ﻿<Properties StartupItem="ASP.NET-Sample/ASP.NET-Sample.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="firefox" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ASP.NET-Sample/Login.aspx.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ASP.NET-Sample/Default.aspx.cs">
     <Files>
-      <File FileName="ASP.NET-Sample/Default.aspx" Line="43" Column="8" />
-      <File FileName="ASP.NET-Sample/Default.aspx.cs" Line="11" Column="53" />
-      <File FileName="ASP.NET-Sample/Login.aspx" Line="52" Column="76" />
-      <File FileName="ASP.NET-Sample/Login.aspx.cs" Line="23" Column="4" />
-      <File FileName="ASP.NET-Sample/StudentSystem/SudentSystemClient.cs" Line="27" Column="74" />
-      <File FileName="ASP.NET-Sample/StudentSystem/Course.cs" Line="33" Column="16" />
-      <File FileName="ASP.NET-Sample/StudentSystem/Exam.cs" Line="28" Column="10" />
-      <File FileName="ASP.NET-Sample/StudentSystem/Track.cs" Line="36" Column="27" />
-      <File FileName="ASP.NET-Sample/StudentSystem/Task.cs" Line="69" Column="40" />
-      <File FileName="ASP.NET-Sample/StudentSystem/User.cs" Line="23" Column="24" />
+      <File FileName="ASP.NET-Sample/Default.aspx" Line="26" Column="148" />
+      <File FileName="ASP.NET-Sample/Default.aspx.cs" Line="24" Column="67" />
+      <File FileName="ASP.NET-Sample/StudentSystem/SudentSystemClient.cs" Line="31" Column="92" />
+      <File FileName="ASP.NET-Sample/courses/cs.aspx.cs" Line="15" Column="4" />
+      <File FileName="ASP.NET-Sample/Login.aspx.cs" Line="20" Column="130" />
+      <File FileName="ASP.NET-Sample/StudentSystem/User.cs" Line="35" Column="50" />
+      <File FileName="ASP.NET-Sample/GetTrack.aspx" Line="58" Column="31" />
+      <File FileName="ASP.NET-Sample/GetTrack.aspx.cs" Line="15" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

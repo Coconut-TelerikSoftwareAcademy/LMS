@@ -32,7 +32,7 @@ namespace StudentSystem
 		{
 			name = Name;
 			email = Email;
-			password = Password;
+			password = Password.GetHashCode ().ToString ();
 			points = 0;
 		}
 

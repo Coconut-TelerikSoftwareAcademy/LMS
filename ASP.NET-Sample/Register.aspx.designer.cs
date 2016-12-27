@@ -11,10 +11,16 @@
 namespace ASP.NETSample {
 	
 	
-	public partial class Default {
+	public partial class Register {
 		
-		protected System.Web.UI.WebControls.Panel username;
+		protected System.Web.UI.HtmlControls.HtmlForm login_form;
 		
-		protected System.Web.UI.WebControls.Panel courses;
+		protected System.Web.UI.WebControls.TextBox name;
+		
+		protected System.Web.UI.WebControls.TextBox email;
+		
+		protected System.Web.UI.WebControls.TextBox password;
+		
+		protected System.Web.UI.WebControls.Button submit_login;
 	}
 }

@@ -20,7 +20,7 @@
 	</head>
 
 	<body>
-	    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse"><a href="/" class="navbar-brand">AT Judge</a>
+	    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse"><a href="/" class="navbar-brand">Tech Edu ++</a>
 	        <ul class="nav navbar-nav">
             <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link">User</a></li>

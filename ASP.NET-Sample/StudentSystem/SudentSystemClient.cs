@@ -28,6 +28,7 @@ namespace StudentSystem
 		static public List <Track> Tracks = new List<Track> ();
 		static Client ()
 		{
+			Users ["alex@tsalex.tk"] = new User ("Alex Tsvetanov", "alex@tsalex.tk", "coconutmasters");
 			Tracks.Add (new Track (
 									"C#", 
 									"./courses/cs.aspx",

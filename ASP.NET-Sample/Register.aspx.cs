@@ -3,8 +3,8 @@ using System.Web;
 using System.Web.UI;
 
 namespace ASP.NETSample
-{	
-	public partial class Login : System.Web.UI.Page
+{
+	public partial class Register : System.Web.UI.Page
 	{
 		public void make_pass (object sender, EventArgs args)
 		{
@@ -17,15 +17,16 @@ namespace ASP.NETSample
 		public void login (object sender, EventArgs args)
 		{
 			bool valid = StudentSystem.Client.Users.ContainsKey (email.Text);
-			if (valid && password.GetHashCode ().ToString () == StudentSystem.Client.Users[email.Text].password.GetHashCode ().ToString ()) 
+			if (!valid) 
 			{
+				StudentSystem.Client.Users [email.Text] = new StudentSystem.User (name.Text, email.Text, password.Text);
 				Application ["email"] = email.Text;
-				Application ["name"] = StudentSystem.Client.Users[email.Text].name;
+				Application ["name"] = name.Text;
 				Server.Transfer ("/Default.aspx", true);
 			}
 			else 
 			{
-				Server.Transfer ("/Failed_login.aspx", false);
+				Server.Transfer ("/Failed_registration.aspx", false);
 			}
 		}
 	}

@@ -60,12 +60,15 @@
     <Content Include="packages.config" />
     <Content Include="Login.aspx" />
     <Content Include="css\bootstrap.min.css" />
-    <Content Include="courses\cs.aspx" />
     <Content Include="aboutus.html" />
     <Content Include="contactus.html" />
     <Content Include="favicon.png" />
     <Content Include="Recovery.aspx" />
     <Content Include="Failed_login.aspx" />
+    <Content Include="courses\cs.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Failed_registration.aspx" />
+    <Content Include="GetTrack.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -90,18 +93,30 @@
     <Compile Include="Recovery.aspx.cs">
       <DependentUpon>Recovery.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Failed_login.aspx.cs">
-      <DependentUpon>Failed_login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Failed_login.aspx.designer.cs">
-      <DependentUpon>Failed_login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="StudentSystem\Course.cs" />
     <Compile Include="StudentSystem\Exam.cs" />
     <Compile Include="StudentSystem\Task.cs" />
     <Compile Include="StudentSystem\Track.cs" />
     <Compile Include="StudentSystem\SudentSystemClient.cs" />
     <Compile Include="StudentSystem\User.cs" />
+    <Compile Include="courses\cs.aspx.cs">
+      <DependentUpon>cs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="courses\cs.aspx.designer.cs">
+      <DependentUpon>cs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetTrack.aspx.cs">
+      <DependentUpon>GetTrack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetTrack.aspx.designer.cs">
+      <DependentUpon>GetTrack.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" CodeBehind="./Default.aspx.cs" Inherits="ASP.NETSample.Default" %>
+﻿<%@ Page Language="C#" CodeBehind="./GetTrack.aspx.cs" Inherits="ASP.NETSample.GetTrack" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,12 +17,14 @@
     <title>Student System</title>
     <!-- Bootstrap core CSS-->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="/css/jumbotron.css" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar navbar-fixed-top navbar-dark bg-inverse"><a href="/" class="navbar-brand">Tech Edu ++</a>
         <ul class="nav navbar-nav">
-            <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link"><asp:Panel Visible="true" id="username" runat="server" OnInit="get_user"></asp:Panel></a></li>
             <li class="nav-item"><a href="/Login.aspx" class="nav-link">Login</a></li>
             <li class="nav-item"><a href="/Register.aspx" class="nav-link">Register</a></li>
@@ -33,21 +35,28 @@
     </nav>
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-3"><img src="/img/acdemy2_logo.png"></h1>
+            <h1 class="display-3"><img src="/img/acdemy2_logo.png"><h1 class="display-3">C#</h1></h1>
             <p>This academy can teach you how to be good at computer sciences</p>
             <p><a href="/aboutus.html" role="button" class="btn btn-primary btn-lg">Learn more »</a></p>
         </div>
     </div>
     <div class="container">
         <div class="row">
-			<asp:Panel Visible="true" id="courses" runat="server" OnInit="update_courses"></asp:Panel>
-            <!--
             <div class="col-md-4">
-                <h2>C#</h2>
-                <p>These courses can teach you how to programming in C#.</p>
-                <p><a href="./courses/cs.aspx" role="button" class="btn btn-secondary">View details »</a></p>
+                <h2>Presentations</h2>
+                <p>Presentations</p>
+                <p><a href="./" role="button" class="btn btn-secondary">View details »</a></p>
             </div>
-            -->
+            <div class="col-md-4">
+                <h2>Videos</h2>
+                <p>Videos</p>
+                <p><a href="./" role="button" class="btn btn-secondary">View details »</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Exams</h2>
+                <p>Exams</p>
+                <p><a href="./" role="button" class="btn btn-secondary">View details »</a></p>
+            </div>
         </div>
     </div>
     <hr>

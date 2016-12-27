@@ -11,10 +11,8 @@
 namespace ASP.NETSample {
 	
 	
-	public partial class Failed_login {
+	public partial class GetTrack {
 		
-		protected System.Web.UI.HtmlControls.HtmlForm login_form;
-		
-		protected System.Web.UI.WebControls.Button submit_login;
+		protected System.Web.UI.WebControls.Panel username;
 	}
 }
