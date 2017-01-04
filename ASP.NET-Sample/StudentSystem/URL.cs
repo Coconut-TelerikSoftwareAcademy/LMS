@@ -1,10 +1,10 @@
 ﻿//
-//  Course.cs
+//  URL.cs
 //
 //  Author:
 //       Alex Tsvetanov <alex@tsalex.tk>
 //
-//  Copyright (c) 2016 Alex Tsvetanov
+//  Copyright (c) 2017 Alex Tsvetanov
 //
 //  This program is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
@@ -19,42 +19,36 @@
 //  You should have received a copy of the GNU General Public License
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 using System;
-using System.Collections.Generic;
 
 namespace StudentSystem
 {
-	public class Course
+	public class url
 	{
-		private string _link;
-		private string _name;
-		public string link 
-		{ 
-			get {
-				return _link;
-			}
-			private set {
-				_link = value;
-			}
-		}
-		public string name 
-		{ 
-			get {
-				return _name;
-			} 
-			private set {
-				_name = value;
-			}
-		}
-		public List < Lesson > Lessons = new List < Lesson > ();
-		public List < Presentation > Presentations = new List < Presentation > ();
-		public List < Exam > Exams = new List<Exam> ();
-		public Course (string Name, string Link, List < Exam > Exams = null, List < Lesson > Lessons = null, List < Presentation > Presentations = null)
+		private string _url;
+		public string URL
 		{
-			this.name = Name;
-			this.Exams = Exams;
-			this.Lessons = Lessons;
-			this.Presentations = Presentations;
-			this.link = Link;
+			get {
+				if (!IsValid (this._url))
+					throw new Exception ("StudenSystem::url::_url is not valid");
+				return this._url;
+			}
+			set {
+				if (!IsValid (value))
+					throw new Exception ("StudenSystem::url::URL::set is not valid");
+				this._url = value;
+			}
+		}
+		public url (string url)
+		{
+			this.URL = url;
+		}
+		public bool IsValid ()
+		{
+			return IsValid (this._url);
+		}
+		private bool IsValid ()
+		{
+			return Uri.IsWellFormedUriString (this._url, UriKind.Absolute);
 		}
 	}
 }

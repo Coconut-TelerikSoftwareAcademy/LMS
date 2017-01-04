@@ -123,6 +123,10 @@
     <Compile Include="GetTrack.aspx.designer.cs">
       <DependentUpon>GetTrack.aspx</DependentUpon>
     </Compile>
+    <Compile Include="StudentSystem\Lesson.cs" />
+    <Compile Include="StudentSystem\Presentation.cs" />
+    <Compile Include="StudentSystem\Video.cs" />
+    <Compile Include="StudentSystem\URL.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
