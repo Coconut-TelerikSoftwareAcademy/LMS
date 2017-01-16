@@ -127,6 +127,7 @@
     <Compile Include="StudentSystem\Presentation.cs" />
     <Compile Include="StudentSystem\Video.cs" />
     <Compile Include="StudentSystem\URL.cs" />
+    <Compile Include="StudentSystem\Certificate.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

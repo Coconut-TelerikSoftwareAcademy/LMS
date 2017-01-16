@@ -1,19 +1,12 @@
 ﻿<Properties StartupItem="ASP.NET-Sample/ASP.NET-Sample.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="firefox" />
-  <MonoDevelop.Ide.Workbench>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="ASP.NET-Sample" expanded="True">
-            <Node name="ASP.NET-Sample" expanded="True">
-              <Node name="StudentSystem" expanded="True">
-                <Node name="Lesson.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ASP.NET-Sample/StudentSystem/URL.cs">
+    <Files>
+      <File FileName="ASP.NET-Sample/DataBase.cs" Line="33" Column="13" />
+      <File FileName="ASP.NET-Sample/StudentSystem/Video.cs" Line="2" Column="1" />
+      <File FileName="ASP.NET-Sample/StudentSystem/User.cs" Line="1" Column="1" />
+      <File FileName="ASP.NET-Sample/StudentSystem/URL.cs" Line="1" Column="2" />
+    </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
