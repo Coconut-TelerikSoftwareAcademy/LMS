@@ -1,10 +1,10 @@
-﻿//
-//  EmptyClass.cs
+//
+//  Certificate.cs
 //
 //  Author:
-//        <g.geneva94@gmail.com>
+//       Gizi Geneva <g.geneva94@gmail.com>
 //
-//  Copyright (c) 2017 
+//  Copyright (c) 2017 Gizi Geneva
 //
 //  This program is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU General Public License as published by
